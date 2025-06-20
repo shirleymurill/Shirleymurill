@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia de Dios</title>
+    <style>
+        body {
+            background-color: #d9e3f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px gray;
+            border-radius: 10px;
+            text-align: justify;
+        }
+        h1 {
+            font-family: 'Georgia', serif;
+            text-align: center;
+            color: #2a3f5f;
+        }
+        h2 {
+            font-family: 'Verdana', sans-serif;
+            color: #1a5276;
+            text-decoration: underline;
+        }
+        p, li {
+            font-family: 'Times New Roman', serif;
+            color: #333;
+            font-size: 16px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .contacto {
+            background: #b3cde0;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        #apDiv1 {
+            position: absolute;
+            width: 200px;
+            height: 115px;
+            z-index: 1;
+            left: 143px;
+            top: 179px;
+        }
+        #apDiv2 {
+            position: absolute;
+            width: 200px;
+            height: 115px;
+            z-index: 2;
+            left: 982px;
+            top: 547px;
+        }
+    </style>
+</head>
+<body>
+    <div id="apDiv2">
+      <embed src="Farmacia de dios.mp4" width="199" height="120"></embed>
+    </div>
+    <div class="container">
+      <div id="apDiv1"> 
+        <embed src="Sunny.mp3" width="205" height="115"></embed>
+      </div>
+      <h1>Farmacia de Dios</h1>
+        <h2>Información General</h2>
+        <img src="farm.jpg" width="72%" height="300">
+        <p><span class="bold">Nombre:</span> Farmacia de Dios</p>
+        <p><span class="bold">Fundación:</span> 2021</p>
+        <p><span class="bold">Ubicación:</span> Las Yaguas, Ver.</p>
+        <p><span class="bold">Dueño:</span> Clementina Pulido Sánchez</p>
+        <p><span class="bold">Tipo de negocio:</span> Farmacia y productos de salud</p>
+        <p><span class="bold">Eslogan:</span> "Tu bienestar, nuestra prioridad"</p>
+        <h2>Visitas a la página: <span id="contador"></span></h2>
+        <script>
+            letvisitas = localStorage.getItem("contadorVisitas");
+            if (visitas === null) {
+                visitas = 0;
+            }
+            visitas++;
+            localStorage.setItem("contadorVisitas", visitas);
+            document.getElementById("contador").textContent = visitas;
+        </script>
+        <h2>Objetivo del Proyecto</h2>
+        <p>Desarrollar estrategias de comunicación y marketing para posicionar la farmacia como un referente en el sector.</p>
+
+        <h2>Ventaja Competitiva</h2>
+        <ul>
+            <li>Amplia variedad de medicamentos de marca y genéricos.</li>
+            <li>Asesoría profesional en salud.</li>
+            <li>Servicio de entrega a domicilio.</li>
+            <li>Productos de bienestar y cuidado personal.</li>
+            <li>Programas de fidelización con descuentos y promociones.</li>
+        </ul>
+
+        <h2>Contacto</h2>
+        <div class="contacto">
+            <p><span class="bold">Teléfono:</span> +52 2284956239</p>
+            <p><span class="bold">Facebook:</span> Farmacia de Dios</p>
+            <p><span class="bold">Correo:</span> <a href="mailto:farmaciadedios@gmail.com">farmaciadedios@gmail.com</a></p>
+<p><span class="bold">Correo alternativo:</span> <a href="mailto:sojuniko@gmail.com">sojuniko@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
